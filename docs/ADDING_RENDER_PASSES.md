@@ -1,13 +1,6 @@
----
-name: add-render-pass
-description: Add a new export pass (like clay, color_id, depth, normals or pose) to the take renderer. Use when the user wants a new output pass, e.g. "add a segmentation pass", "export albedo", "add a canny/edge pass".
-disable-model-invocation: true
-argument-hint: <pass_id> [what it encodes]
----
-
 # Add a render pass
 
-New pass: `$ARGUMENTS`
+Choose a stable snake_case identifier for the new pass and describe what it encodes.
 
 A pass touches five places. Miss one and the build may still pass while the render dialog, the manifest or the bundle silently lacks the new pass. Work through them in order.
 
@@ -38,5 +31,5 @@ The frame loop special-cases `pose`. A new 2D pass draws into an `OffscreenCanva
 ## 5. Test and document
 
 - `src/render/plan.test.ts` / `export.test.ts`: cover any pure helper you added and check the manifest has the new `encoding` entry.
-- Update `README.md`: the intro line, the "Render passes" feature bullet and the bundle table that says what each `<pass>.mp4` is for. Also update the opening line of `CLAUDE.md`, which lists every pass.
+- Update `README.md`: the intro line, the "Render passes" feature bullet and the bundle table that says what each `<pass>.mp4` is for. Also update the opening line of `CONTRIBUTING.md`, which lists every pass.
 - Run `npm run check`. Then, in the dev server, render a short take with only the new pass and check the output (and a PNG export when exact bytes matter).

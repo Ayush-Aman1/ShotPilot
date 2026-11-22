@@ -1,11 +1,6 @@
----
-name: format-migration
-description: Change the shape of a saved ShotPilot file (scene `shotpilot.scene`, take `shotpilot.take`, or render manifest `shotpilot.render`) safely. Use whenever a change renames, removes, moves or re-types a field in SceneDoc, SceneObject, CameraRig, Take or the manifest, or changes what an existing field means. Adding a new optional field with a default does not need a version bump.
----
-
 # Saved-file format changes
 
-Users have scene and take files on disk and in IndexedDB (`src/storage/`). They must keep opening after every deploy. The rule in CLAUDE.md is: **bump the version and add a migration when the shape changes.**
+Users have scene and take files on disk and in IndexedDB (`src/storage/`). They must keep opening after every deploy. The rule in CONTRIBUTING.md is: **bump the version and add a migration when the shape changes.**
 
 ## Decide whether to bump
 

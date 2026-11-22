@@ -1,6 +1,13 @@
-# ShotPilot: notes for Claude and contributors
+# Contributing to ShotPilot
 
 Open-source VR previsualization web app. Block out scenes in VR (actors, props, virtual camera), record camera takes, and export frame-synced video passes (clay, color_id, depth, normals, OpenPose) as input for generative AI video models.
+
+## Development guides
+
+- [Developer setup and generated files](docs/DEVELOPMENT.md)
+- [Adding render passes](docs/ADDING_RENDER_PASSES.md)
+- [Saved-file format changes](docs/FILE_FORMATS.md)
+- [Architecture and Quest performance review checklist](docs/REVIEW_CHECKLIST.md)
 
 ## Stack
 
@@ -107,7 +114,7 @@ npm run preview    # serve dist/
 npm run catalog    # refresh public/catalog/poly-google.json from poly.pizza
 ```
 
-Testing on a Quest during development: WebXR needs a secure context. Either use `adb reverse tcp:5173 tcp:5173` and open `http://localhost:5173` in the Quest browser, or push to `main` and use the Pages URL.
+Testing on a Quest during development: WebXR needs a secure context. Either use `adb reverse tcp:5173 tcp:5173` and open `http://localhost:5173` in the Quest browser, or configure HTTPS hosting separately.
 
 ## CI and publishing
 

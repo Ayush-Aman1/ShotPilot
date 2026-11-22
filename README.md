@@ -223,7 +223,7 @@ Tips:
 
 ## Contributing
 
-See [CLAUDE.md](CLAUDE.md) for the architecture, folder layout and conventions. Assets must be CC0 or CC-BY and listed in [ASSETS.md](ASSETS.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the architecture, folder layout and conventions. Assets must be CC0 or CC-BY and listed in [ASSETS.md](ASSETS.md).
 
 ## License
 
