@@ -1,0 +1,87 @@
+{
+  "format": "shotpilot.scene",
+  "version": 1,
+  "id": "ef4d0efb-f6d8-4e00-a04c-a74aaaf92a9d",
+  "name": "Untitled scene",
+  "objects": [
+    {
+      "kind": "actor",
+      "name": "Man",
+      "asset": {
+        "source": "bundled",
+        "id": "man"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0.26693358189581157,
+          0,
+          0.9637149282107609
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "id": "3d85c395-782c-4b08-b1fb-8c28120170dc",
+      "color": "#ee2b2b",
+      "actor": {
+        "clip": "idle",
+        "speed": 1.3,
+        "waypoints": [
+          [
+            0.383,
+            0,
+            -1.963
+          ],
+          [
+            0.549,
+            0,
+            -3.561
+          ]
+        ],
+        "loop": false
+      }
+    }
+  ],
+  "camera": {
+    "transform": {
+      "position": [
+        0,
+        1.6,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "lens": {
+      "focalLength": 35,
+      "sensor": "super35",
+      "aspect": "16:9",
+      "fps": 24,
+      "focusMode": "auto",
+      "focusDistance": 3,
+      "guides": {
+        "thirds": true,
+        "safe": false,
+        "center": false
+      }
+    },
+    "keyframes": []
+  }
+}
